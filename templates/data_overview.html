@@ -18,15 +18,16 @@
             <p>Time period: {{ start_year }} - {{ end_year }}</p>
             <!-- Add other summary information here -->
         </section>
-        <section class="chart">
-            <h2>On-Time Performance</h2>
-            <div id="onTimeChart"></div>
+        <section class="images">
+            <h2>Pair plot</h2>
+            <img id="pairplot" src="{{ url_for('static', filename='images/pairplot.png') }}" alt="Pair plot">
         </section>
+        <section class="images">
+            <h2>Heatmap</h2>
+            <img src="{{ url_for('static', filename='images/heatmap.png') }}" alt="Heatmap">
     </main>
     <footer>
         <p>&copy; 2023 Your Company Name</p>
     </footer>
-
-    
 </body>
 </html>

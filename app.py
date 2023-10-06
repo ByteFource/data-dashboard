@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np  # not explicitly used in this code
 import matplotlib.pyplot as plt
 import seaborn as sns
+import plotly.express as px
 
 app = Flask(__name__)
 
@@ -22,6 +23,8 @@ def data_overview():
     total_records = len(df)
     start_year = df['year'].min()
     end_year = df['year'].max()
+    
+    px.bar
     
     return render_template('data_overview.html', total_records=total_records, start_year=start_year, end_year=end_year) 
 
