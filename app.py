@@ -36,7 +36,6 @@ def data_overview():
 
 @app.route("/line-comparison")
 def line_overview():
-    line = df["line"].unique()
     onTime = df.groupby(["line"])["terminal_on_time_performance"].mean().sort_values()
     onTime = onTime * 100
     
