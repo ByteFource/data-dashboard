@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual Environments
+venv/
+env/
+
+# Logs
+logs
+*.log
+
+# PyInstaller
+dist/
+build/
+*.spec
+
+# Tests
+test/
+tests/
+testing/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Local configuration
+.DS_Store
+
+# IDE-specific
+.vscode/
+.idea/
