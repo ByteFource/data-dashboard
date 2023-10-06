@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <title>Data Overview - MTA Subway Terminal On-Time Performance</title>
+</head>
+<body>
+    <header>
+        <h1>Data Overview</h1>
+    </header>
+    <main>
+        <section class="summary">
+            <h2>Dataset Summary</h2>
+            <p>Total records: {{ total_records }}</p>
+            <p>Time period: {{ start_year }} - {{ end_year }}</p>
+            <!-- Add other summary information here -->
+        </section>
+        <section class="chart">
+            <h2>On-Time Performance</h2>
+            <div id="onTimeChart"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Your Company Name</p>
+    </footer>
+
+    
+</body>
+</html>

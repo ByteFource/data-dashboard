@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>MTA Subway Terminal On-Time Performance Dashboard</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the MTA Subway On-Time Performance Dashboard</h1>
+    </header>
+    <main>
+        <section class="intro">
+            <p>This dashboard provides insights into the on-time performance of MTA subway lines from 2015 to 2019.</p>
+        </section>
+        <section class="links">
+            <h2>Explore the Data:</h2>
+            <ul>
+                <li><a href="/data-overview">Data Overview</a></li>
+                <li><a href="/monthly-performance">Monthly Performance</a></li>
+                <li><a href="/line-comparison">Line Comparison</a></li>
+                <li><a href="/division-analysis">Division Analysis</a></li>
+                <li><a href="/day-type-analysis">Day Type Analysis</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 ByteFource</p>
+    </footer>
+</body>
+</html>
