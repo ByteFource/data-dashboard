@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <title>Line Performance</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Line Comparison</h1>
+    </header>
+    <main>
+        
+        <!-- Add other summary information here -->
+      
+      <section class="chart">
+        <h2>Subway Line Performance</h2>
+        <div id="subwayLineChart"></div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 Your Company Name</p>
+    </footer>
+  </body>
+  <script>
+    var graphs= {{ graph_json | safe }}
+    var layout= {
+        yaxis:{
+            tickformat:',.1%',
+            range:[0,1]
+        }
+    }
+    Plotly.newPlot("subwayLineChart", graphs,layout)
+  </script>
+</html>
